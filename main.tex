@@ -515,5 +515,581 @@ a_{1} + 3a_{2} + 4a_3 - a_{4} + 3a_{3} = 0\\
 0 & 0 & 0 & 1 & \frac{-1}{2} & 0 \\
 0 & 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 0 & 0 & 0 \\
-\end{array}\right]\hspace{0.3cm}
+\end{array}\right]\hspace{0.3cm}\\
+\section*{Exercício 3}
+
+ Considere o conjunto $W = \{(x, y, z, w, t, u)|x, y, z, w, t, u \in R \wedge x + y + w + z + t + u = 0 \wedge y - w - z = 0 \wedge w + t - x = 0\} \subseteq R6$.
+Mostre que o conjunto $W$ é um subespaço do R-espaço vetorial $R6$.\newline \\
+w = x - t\\
+y - x + t - z = 0 \rightarrow y = z - t + x\\
+x + z - t + x + x - t + z + t + u = 0 \rightarrow 3x + 2z - t + u = 0 \rightarrow u = t - 2z - 3x\\
+W = \{ (x,z - t + x,z, x - t, t, t - 2z - 3x) | x, z, t \in R)\} \newline \\
+1) $0 \in W para x = 0 z = 0 t = 0:
+(0,0 - 0 + 0, 0, 0 - 0, 0, 0 - 20 - 30) = ( 0,0,0,0,0,0)\\
+Logo, 0 \in W$\newline \\
+2) V U \in W\rightarrow V + U \in W:\\
+$V = (x1, z1-t1 + x1, z1, x1 - t1, t1, t1 - 2z1 - 3x1)\\ \\
+U = (x2, z2 - t2 + x2, z2, x2 - t2, t2, t2 - 2z2 - 3x2)\\ \\
+V + U = (x1, z1 -t1 + x1, z1, x1 - t1, t1, t1 - 2z1 - 3x1) + (x2, z2 - t2 + X2, z2, x2 - t2, t2, +2 - 2z2 - 3x2)\\ \\
+V + U = (x1 + x2, z1 - t1 + x1 + z2 - t2 + x2, z1 +Z2, x1 - t1 + x2-t2, t1 + t2, t1 - 2z1 - 3x1 + t2 - 2z2 - 3x2)$\\ \\
+$Logo V  + U \in W$\newline \\
+3)$a \in R, V \in W \rightarrow aV \in W: \\ \\
+V = (x, z - t + x, z, x - t, t, t - 2z-3x)\\ \\
+a\cdot V = a \cdot (x,z-t+x,z,x-t,t,t-2z-3x)\\ \\
+a\cdot V = (ax, az - at + ax, az, ax - at, at, at - 2az - 3ax)\\ \\
+Logo,  aV \in W.$ Portanto, W é um subespaço vetorial de R6. \newline 
+
+\bullet $O conjunto W = \{(x, y, z)|x, y $ \in R$ $\wedge$ x − z = 1 $ \wedge$ y + x = 0\} é um subespaço vetorial de R3? Esboce graficamente W.$\\ \\
+a)$$ 0 \in W - (0,0,0)\\ \\
+x + y = 0\\
+y + x = 0\\
+x + z = 1 \\
+$supondo que$ x = 1, y = -1\\
+0 + (1,-1, z)\\
+0 + 1 = 1\\
+0 + (-1) = -1\\ \\
+$Logo, W não é subespaço vetorial de R3 \newline \\
+$\bullet $Invente seu subespaço vetorial em qualquer Rn com n $\geq$ 2. Mostre que o conjunto apresentado é de fato um subespaço vetorial. Não vale usar nenhum exemplo da aula ou da prova. \newline \\
+
+$S = \{(x,y) \in R2, y = 2x\})\\ \\
+i) 0 \in S = (0,0) \\
+x = 0, $ então (0,0) \in S\\ \\
+ii)$ Seja v_{1} = (x_{1}, 2x_{1}), e v_{2} = (x_{2}, 2x_{2})\\ \\
+ v_{1} + v_{2} \in S \rightarrow (x_{1}, 2x_{1}) + (x_{2} + 2x_{2}) = (x_{1} + x_{2}, 2x_{1} + 2x_{2}) = (x_{1} + x_{2}, 2(x_{1} + x_{2})) \in S.\\ \\
+iii) \alpha  v_{1} \in S\\ \\
+ \alpha (x_{1}, 2x_{1}) = (2x_{1}, \alpha(2x_{1})) = (\alpha x_{1}, 2(x_{1})) \in S\\$\newline
+ Portanto, S é um subespaço vetorial de R2
+\newpage
+\section*{Exercício 4}
+Mostre que o conjunto \{(−1, 1, 1, 1, 0, 1, 1),(1, 0, −1, 1, 1, −1, 0),(2, 2, 1, 1, −1, 1, 1),
+(1, 0, 0, 1, 2, 1, 1),(2, 0, 2, 0, 2, 0, 2),(1, −1, −1, −1, −1, −1, 1),(3, 0, 2, 0, 2, −1, 2)\} forma uma base para o R-espaço
+vetorial R7.
+Escreva o vetor (0, 1, 1, 1, 1, 0, 1) nesta base.\newline \\ \\
+\left[
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+1 & 0 & 2 & 0 & 0 & -1 & 0 & y \\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & z \\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+1 & -2 & 1 & 1 & 0 & -2 & -1 & u \\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & t \\
+\end{array}\right]\hspace{0.3cm}1) l_{1} \leftarrow -1 \cdot l_{1}\newline \\ \\
+\left[
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & z \\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & u \\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & t \\
+\end{array}\right]\hspace{0.3cm}2) l_{2} \leftarrow l_{2} - 1 \cdot l_{1}\newline \\ \\
+\newpage
+\left[
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & u \\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & t \\
+\end{array}\right]\hspace{0.3cm}3) l_{3} \leftarrow l_{3} - 1 \cdot l_{1}\newline \\ \\
+\left[
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w \cdot (-x) \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & u \\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & t \\
+\end{array}\right]\hspace{0.3cm}4) l-{4} \leftarrow l_{4} - 1 \cdot l_{1}\newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w \cdot (-x) \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & t \\
+\end{array}\right]\hspace{0.3cm}5) l_{6} \leftarrow l_{6} - 1 \cdot l_{1} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w \cdot (-x) \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & t \cdot (-x) \\
+\end{array}\right]\hspace{0.3cm}6) l_{7} \leftarrow l_{7} - 1 \cdot l_{1} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 1 & \frac{3}{2} & 1 & 1 & 0 & \frac{3}{2} & \frac{w \cdot (-x)}{2} \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & t \cdot (-x) \\
+\end{array}\right]\hspace{0.3cm}7) l_{4} \leftarrow l_{4} \cdot \frac{1}{2} \newline \\ \\
+\newpage
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 0 & \frac{-5}{2} & 0 & -1 & 0 & \frac{-3}{2} & \frac{w \cdot (-2x) \cdot y}{2} \\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & v \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & t \cdot (-x) \\
+\end{array}\right]\hspace{0.3cm}8) l_{4} \leftarrow l_{4} - 1 \cdot l_{2}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 0 & \frac{-5}{2} & 0 & -1 & 0 & \frac{-3}{2} & \frac{w \cdot (-2x) \cdot y}{2} \\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & v \cdot (-x) \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & t \cdot (-x) \\
+\end{array}\right]\hspace{0.3cm}9) l_{5} \leftarrow l_{5} - 1 \cdot l_{2}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z \cdot (-x) \\
+0 & 0 & \frac{-5}{2} & 0 & -1 & 0 & \frac{-3}{2} & \frac{w \cdot (-2x) \cdot y}{2} \\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & v \cdot (-x) \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & t \cdot (-2x) \cdot y \\
+\end{array}\right]\hspace{0.3cm}10) l_{7} \leftarrow l_{7} - 1 \cdot l_{2}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & \frac{-5}{2} & 0 & -1 & 0 & \frac{-3}{2} & \frac{w \cdot (-2x) \cdot y}{2} \\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & v \cdot (-x) \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & t \cdot (-2x) \cdot y \\
+\end{array}\right]\hspace{0.3cm}11) l_{3} \leftarrow l_{3} \cdot \frac{1}{3} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & 0 & \frac{2}{5} & 0 & \frac{3}{5} & \frac{w \cdot 2x \cdot y}{5} \\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & v \cdot (-x) \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & t \cdot (-2x) \cdot y \\
+\end{array}\right]\hspace{0.3cm}12) l_{4} \leftarrow l_{4} \cdot (\frac{-2}{5})  \newline \\ \\
+\newpage
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & 0 & \frac{2}{5} & 0 & \frac{3}{5} & \frac{w \cdot 2x \cdot y}{5} \\
+0 & 0 & 1 & \frac{-1}{5} & 0 & \frac{1}{5} & \frac{1}{5} & v \cdot y \cdot x \cdot \frac{1}{5} \\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & u \cdot (-x) \\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & t \cdot (-2x) \cdot y \\
+\end{array}\right]\hspace{0.3cm}13) l_{5} \leftarrow l_{5} \cdot (\frac{-1}{5})  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & 0 & \frac{2}{5} & 0 & \frac{3}{5} & \frac{w \cdot 2x \cdot y}{5} \\
+0 & 0 & 1 & \frac{-1}{5} & 0 & \frac{1}{5} & \frac{1}{5} & v \cdot y \cdot x \cdot \frac{1}{5} \\
+0 & 0 & 1 & \frac{2}{5} & \frac{2}{3} & 0 & \frac{2}{3} & u \cdot (-x) \cdot \frac{1}{3}\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & t \cdot (-2x) \cdot y \\
+\end{array}\right]\hspace{0.3cm}14) l_{6} \leftarrow l_{6} \cdot \frac{1}{3}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & 0 & \frac{2}{5} & 0 & \frac{3}{5} & \frac{w \cdot 2x \cdot y}{5} \\
+0 & 0 & 1 & \frac{-1}{5} & 0 & \frac{1}{5} & \frac{1}{5} & v \cdot y \cdot x \cdot \frac{1}{5} \\
+0 & 0 & 1 & \frac{2}{5} & \frac{2}{3} & 0 & \frac{2}{3} & u \cdot (-x) \cdot \frac{1}{3}\\
+0 & 0 & 1 & -1 & -2 & -2 & -2 & -t \cdot 2x \cdot (-y) \\
+\end{array}\right]\hspace{0.3cm}15) l_{7} \leftarrow l_{7} \cdot (-1)  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & \frac{-1}{3} & \frac{-14}{15} & 0 & \frac{-16}{15} & \frac{-w \cdot 2 \cdot x^2 \cdot y \cdot z}{15} \\
+0 & 0 & 1 & \frac{-1}{5} & 0 & \frac{1}{5} & \frac{1}{5} & v \cdot y \cdot x \cdot \frac{1}{5} \\
+0 & 0 & 1 & \frac{2}{5} & \frac{2}{3} & 0 & \frac{2}{3} & u \cdot (-x) \cdot \frac{1}{3}\\
+0 & 0 & 1 & -1 & -2 & -2 & -2 & -t \cdot 2x \cdot (-y) \\
+\end{array}\right]\hspace{0.3cm}16) l_{4} \leftarrow l_{4} - 1 \cdot l_{3} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & \frac{-1}{3} & \frac{-14}{15} & 0 & \frac{-16}{15} & \frac{-w \cdot 2 \cdot x^2 \cdot y \cdot z}{15} \\
+0 & 0 & 0 & \frac{-8}{15} & \frac{-4}{3} & \frac{1}{5} & \frac{-22}{15} & \frac{-v \cdot y \cdot x^2 \cdot z}{15}\\
+0 & 0 & 1 & \frac{2}{5} & \frac{2}{3} & 0 & \frac{2}{3} & u \cdot (-x) \cdot \frac{1}{3}\\
+0 & 0 & 1 & -1 & -2 & -2 & -2 & -t \cdot 2x \cdot (-y) \\
+\end{array}\right]\hspace{0.3cm}17) l_{5} \leftarrow l_{5} - 1 \cdot l_{3}  \newline \\ \\
+\newpage
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & \frac{-1}{3} & \frac{-14}{15} & 0 & \frac{-16}{15} & \frac{-w \cdot 2 \cdot x^2 \cdot y \cdot z}{15} \\
+0 & 0 & 0 & \frac{-8}{15} & \frac{-4}{3} & \frac{1}{5} & \frac{-22}{15} & \frac{-v \cdot y \cdot x^2 \cdot z}{15}\\
+0 & 0 & 0 & \frac{1}{3} & \frac{-2}{3} & 0 & -1 & \frac{u \cdot x^2 \cdot z}{9}\\
+0 & 0 & 1 & -1 & -2 & -2 & -2 & -t \cdot 2x \cdot (-y) \\
+\end{array}\right]\hspace{0.3cm}18)l_{6} \leftarrow l_{6} - 1 \cdot l_{3}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 1 & \frac{-1}{3} & \frac{-14}{15} & 0 & \frac{-16}{15} & \frac{-w \cdot 2 \cdot x^2 \cdot y \cdot z}{15} \\
+0 & 0 & 0 & \frac{-8}{15} & \frac{-4}{3} & \frac{1}{5} & \frac{-22}{15} & \frac{-v \cdot y \cdot x^2 \cdot z}{15}\\
+0 & 0 & 0 & \frac{1}{3} & \frac{-2}{3} & 0 & -1 & \frac{u \cdot x^2 \cdot z}{9}\\
+0 & 0 & 0 & \frac{-4}{3} & \frac{-10}{3} & -2 & \frac{-11}{3} & \frac{-t \cdot 2x^2 \cdot y \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}19) l_{7} \leftarrow l_{7} - 1 \cdot l_{3}   \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & \frac{-8}{15} & \frac{-4}{3} & \frac{1}{5} & \frac{-22}{15} & \frac{-v \cdot y \cdot x^2 \cdot z}{15}\\
+0 & 0 & 0 & \frac{1}{3} & \frac{-2}{3} & 0 & -1 & \frac{u \cdot x^2 \cdot z}{9}\\
+0 & 0 & 0 & \frac{-4}{3} & \frac{-10}{3} & -2 & \frac{-11}{3} & \frac{-t \cdot 2x^2 \cdot y \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}20) l_{4} \leftarrow l_{4} \cdot (-3) \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{-3}{8} & \frac{11}{4} & \frac{v \cdot y \cdot x^2 \cdot z}{8}\\
+0 & 0 & 0 & \frac{1}{3} & \frac{-2}{3} & 0 & -1 & \frac{u \cdot x^2 \cdot z}{9}\\
+0 & 0 & 0 & \frac{-4}{3} & \frac{-10}{3} & -2 & \frac{-11}{3} & \frac{-t \cdot 2x^2 \cdot y \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}21) l_{5} \leftarrow l_{5} \cdoit \frac{-15}{8} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{-3}{8} & \frac{11}{4} & \frac{v \cdot y \cdot x^2 \cdot z}{8}\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & \frac{u \cdot x^2 \cdot z}{3}\\
+0 & 0 & 0 & \frac{-4}{3} & \frac{-10}{3} & -2 & \frac{-11}{3} & \frac{-t \cdot 2x^2 \cdot y \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}22) l_{6} \leftarrow l_{6} \cdot 3 \\ \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{-3}{8} & \frac{11}{4} & \frac{v \cdot y \cdot x^2 \cdot z}{8}\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & \frac{u \cdot x^2 \cdot z}{3}\\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{3}{2} & \frac{11}{4} & \frac{t \cdot x^2 \cdot y \cdot z}{2}\\
+\end{array}\right]\hspace{0.3cm}23) l_{7} \leftarrow l_{7} \cdot (\frac{-3}{4})  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{-3}{8} & \frac{-9}{20} & \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{y \cdot 2x^2 \cdot w \cdot z}{5}\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & \frac{u \cdot x^2 \cdot z}{3}\\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{3}{2} & \frac{11}{4} & \frac{t \cdot x^2 \cdot y \cdot z}{2}\\
+\end{array}\right]\hspace{0.3cm}24) l_{5} \leftarrow l_{5} -1 \cdot l_{4}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{-3}{8} & \frac{-9}{20} & \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{y \cdot 2x^2 \cdot w \cdot z}{5}\\
+0 & 0 & 0 & 0 & \frac{-24}{5} & 0 & \frac{-31}{5} & \frac{u \cdot x^2 \cdot z}{3} - \frac{2 \cdot x^2 \cdot w \cdot y \cdot z}{5} \\
+0 & 0 & 0 & 1 & \frac{5}{2} & \frac{3}{2} & \frac{11}{4} & \frac{t \cdot x^2 \cdot y \cdot z}{2}\\
+\end{array}\right]\hspace{0.3cm}25) l_{6} \leftarrow l_{6} - 1 \cdot l_{4}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{-3}{8} & \frac{-9}{20} & \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{y \cdot 2x^2 \cdot w \cdot z}{5}\\
+0 & 0 & 0 & 0 & \frac{-24}{5} & 0 & \frac{-31}{5} & \frac{u \cdot x^2 \cdot z}{3} - \frac{2 \cdot x^2 \cdot w \cdot y \cdot z}{5} \\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{3}{2} & \frac{-9}{20} & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5}\\
+\end{array}\right]\hspace{0.3cm}26) l_{7} \leftarrow l_{7} - 1 \cdot l_{4}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & \frac{-24}{5} & 0 & \frac{-31}{5} & \frac{u \cdot x^2 \cdot z}{3} - \frac{2 \cdot x^2 \cdot w \cdot y \cdot z}{5} \\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{3}{2} & \frac{-9}{20} & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5}\\
+\end{array}\right]\hspace{0.3cm}27) l_{5} \leftarrow l_{5} \cdot \frac{-10}{3}  \newline \\ \\
+\newpage
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & \frac{-5}{4} & \frac{-5}{24} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8}\\
+0 & 0 & 0 & 0 & \frac{-3}{10} & \frac{3}{2} & \frac{-9}{20} & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5}\\
+\end{array}\right]\hspace{0.3cm}28) l_{6} \leftarrow l_{6} - 1 \cdot l_{5} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & \frac{-5}{4} & \frac{-5}{24} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8}\\
+0 & 0 & 0 & 0 & 0 & \frac{-25}{4} & 0 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}29) l_{7} \leftarrow l_{7} - 1 \cdot l_{5} \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & 1 & \frac{1}{6} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10}\\
+0 & 0 & 0 & 0 & 0 & \frac{-25}{4} & 0 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\hspace{0.3cm}30) l_{6} \leftarrow l_{6} \cdot (\frac{-4}{5}) \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & 1 & \frac{1}{6} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+\end{array}\right]\hspace{0.3cm}31) l_{7} \leftarrow l_{7} \cdot (\frac{-4}{25}) \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & 1 & \frac{1}{6} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10}\\
+0 & 0 & 0 & 0 & 0 & 0 & \frac{-1}{6} & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{v \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} + \frac{u \cdot y \cdot x^2 \cdot z}{10}\\
+\end{array}\right]\newline \\32) l_{7} \leftarrow l_{7} \cdot - 1 \cdot l_{6}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & 1 & \frac{1}{6} & \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{2x^2 \cdot w \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\33) l_{7} \leftarrow l_{7} \cdot (-6)  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & \frac{3}{2} & \frac{v \cdot y \cdot x^2 \cdot z}{8} + \frac{y \cdot 4x^2 \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\34) l_{6} \leftarrow l_{6} - \frac{-1}{6} \cdot l_{7}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & \frac{16}{5} & \frac{w \cdot 2x^2 \cdot y \cdot z}{5}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & 0 &\frac{v \cdot y^2 \cdot x^2 \cdot z - v \cdot y x^2 \cdot z}{8} - \frac{ux^2 \cdot z}{3} - \frac{y \cdot 3x^2 + z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{y \cdot 16x^2 \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\35) l_{5} \leftarrow l_{5} - \frac{3}{2} \cdot l_{7}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & \frac{5}{3} & \frac{z \cdot (-x)}{3} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 & \frac{w \cdot (-2x^2) \cdot y \cdot z -8x^2 \cdot t \cdot y \cdot z}{5} -  \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{-16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & 0 &\frac{v \cdot y^2 \cdot x^2 \cdot z - v \cdot y x^2 \cdot z}{8} - \frac{ux^2 \cdot z}{3} - \frac{y \cdot 3x^2 + z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{y \cdot 16x^2 \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\36) l_{4} \leftarrow l_{4} - \frac{16}{5} \cdot l_{7}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y \cdot (-x) \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 & \frac{-z \cdot x - u \cdot x^2 \cdot z - 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{5x^2 \cdot t \cdot y \cdot z}{6} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{ v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 & \frac{w \cdot (-2x^2) \cdot y \cdot z -8x^2 \cdot t \cdot y \cdot z}{5} -  \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{-16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & 0 &\frac{v \cdot y^2 \cdot x^2 \cdot z - v \cdot y x^2 \cdot z}{8} - \frac{ux^2 \cdot z}{3} - \frac{y \cdot 3x^2 + z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{y \cdot 16x^2 \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\37) l_{3} \leftarrow l_{3} - \frac{5}{3} \cdot l_{7}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & -3 & -x \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & -y \cdot x - \frac{3y \cdot x^2 \cdot + z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 & \frac{-z \cdot x - u \cdot x^2 \cdot z - 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{5x^2 \cdot t \cdot y \cdot z}{6} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{ v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 & \frac{w \cdot (-2x^2) \cdot y \cdot z -8x^2 \cdot t \cdot y \cdot z}{5} -  \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{-16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & 0 &\frac{v \cdot y^2 \cdot x^2 \cdot z - v \cdot y x^2 \cdot z}{8} - \frac{ux^2 \cdot z}{3} - \frac{y \cdot 3x^2 + z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{y \cdot 16x^2 \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\38) l_{2} \leftarrow l_{2} - 3 \cdot l_{7}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & 0 & -x + \frac{3x^2 \cdot t \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u\cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & -y \cdot x - \frac{3y \cdot x^2 \cdot + z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 & \frac{-z \cdot x - u \cdot x^2 \cdot z - 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{5x^2 \cdot t \cdot y \cdot z}{6} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{ v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 & \frac{w \cdot (-2x^2) \cdot y \cdot z -8x^2 \cdot t \cdot y \cdot z}{5} -  \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{-16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+0 & 0 & 0 & 0 & 1 & \frac{5}{4} & 0 &\frac{v \cdot y^2 \cdot x^2 \cdot z - v \cdot y x^2 \cdot z}{8} - \frac{ux^2 \cdot z}{3} - \frac{y \cdot 3x^2 + z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{y \cdot 16x^2 \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \frac{-6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y \cdot x^2 \cdot z}{10} - \frac{tx^2 \cdot y \cdot z}{12} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \frac{t \cdot x^2 \cdot y \cdot z}{2} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} - \frac{16x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3}\\
+\end{array}\right]\newline \\39) l_{1} \leftarrow l_{1} + 3 \cdot l_{7}  \newline \\ \\
+$\textbf{OBS - A partir daqui coloquei apenas as linhas que foram sendo modificadas, por conta do tamanho das contas}$\newline\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & -1 & 0 \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]40) l_{5} \leftarrow l_{5} -\frac{5}{4}\cdot l_{6}  \newline \\ \\
+L5- \frac{v \cdot y^2 \cdot z - v \cdot 2x^2 \cdot v \cdot y \cdot z}{8} - \frac{ux^2 \cdot z}{3} + \frac{y \cdot 3x^2 \cdot t \cdot z + 6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v\cdot y \cdot z}{4} - \frac{4x^2 \cdot w \cdot y \cdot z}{5} + \frac{16x^2 \cdot y^2 \cdot w \cdot z - 16x^2 \cdot y \cdot z \cdot w}{75} + \frac{u \cdot y \cdot x^2 \cdot z}{10}  - \frac{t \cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & 0 & 0 \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 \\
+0 & 0 & 0 & 1 & \frac{14}{5} & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]41) l_{1} \leftarrow l_{1} + 1\cdot l_{5}  \newline \\ \\
+L1 \rightarrow x + \frac{3x^2 \cdot t \cdot y \cdot z}{2} + (\frac{-10x^2 \cdot w \cdot y \cdot z - 3x^2 \cdot v \cdot y \cdot z}{5}) - \frac{v \cdot y \cdot x^2 \cdot y \cdot w \cdot z}{4} - \frac{32x^2 \cdot y \cdot w \cdot z}{75} - \frac{u \cdot x^2 \cdot z + 4x^2 \cdot y \cdot w \cdot z}{3} + \frac{u \cdot y \cdot x^2 \cdot z}{10} - \frac{t \cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & 0 & 0 \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & \frac{4}{3} & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]42) l_{4} \leftarrow l_{4} - \frac{14}{5}\cdot l_{5}  \newline \\ \\
+L4 \rightarrow \frac{-6w \cdot x^2 \cdot y \cdot z 8x^2 \cdot t \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} + (\frac{-32x^2 \cdot y \cdot w \cdot z + 64  \cdot w \cdot x^2 \cdot z}{75}) + \frac{-2x^2 \cdot u \cdot z - 4x^2 \cdot y \cdot w \cdot z}{3} - \frac{7(v\cdot y^2 \cdot z -2x^2 \cdot v \cdot y \cdot z}{20} - \frac{3x^2 \cdot y \cdot t \cdot z + 6w\cdot x^2 \cdot y \cdot z + 3x^2}{4} + \frac{u\cdot y \cdot x^2 \cdot z}{10} - \frac{t \cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & 0 & 0 \\
+0 & 1 & 4 & 1 & 2 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]43) l_{3} \leftarrow l_{3} - \frac{4}{3}\cdot l_{5}  \newline \\ \\
+L3 \rightarrow \frac{-z \cdot x + 4x^2 \cdot y \cdot w \cdot z}{3} + (\frac{-5x^2 \cdot t \cdot y \cdot z - v \cdot y^2 \cdot z + 2x^2 \cdot v \cdot y \cdot z}{6}) - \frac{8x^2 \cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} + (\frac{32x^2 \cdot y \cdot w \cdot z + 64x^2 \cdot z \cdot w}{75}) - \\\frac{3x^2 \cdot y \cdot t \cdot z + 6x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{4} + \frac{u \cdot y \cdot x^2 \cdot z}{10} - \frac{t \cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & -2 & 0 & 0 \\
+0 & 1 & 4 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]44) l_{2} \leftarrow l_{2} - 2 \cdot l_{5}  \newline \\ \\
+L2 \rightarrow  -y \cdot - \frac{3y \cdot x^2 \cdot t \cdot z}{2} - \frac{8x^2\cdot w \cdot y \cdot z}{5} - \frac{v \cdot y \cdot x^2 \cdot z}{8} + (\frac{32y\cdot x^2 \cdot w \cdot z + 64x^2 \cdot z \cdot w}{75}) + (\frac{-2x^2 \cdot u \cdot z - 4y \cdot x^2 \cdot w \cdot z}{3}) + \\(\frac{-v \cdot y^2 - x^2 \cdot v \cdot y \cdot z - 3y \cdot x^2 \cdot t \cdot z - 6x^2 \cdot w \cdot y \cdot z}{4}) + \frac{u \cdot y \cdot x^2 \cdot z}{10} - \frac{t \cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & 0 & 0 & 0 \\
+0 & 1 & 4 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & \frac{1}{3} & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]45) l_{1} \leftarrow l_{1} + 2 \cdot l_{5}  \newline \\ \\
+L1 \rightarrow -x + \frac{3x^2 \cdot t \cdot y \cdot z}{2} + (\frac{-14x^2 \cdot w \cdot y \cdot z + 3x^2 \cdot v \cdot y \cdot z}{5} + \frac{v \cdot y^2 \cdot z - v \cdot y^2 \cdot x^2 \cdot w \cdot z - 5x^2 \cdot v \cdot y \cdot z - 3x^2 \cdot y \cdot t \cdot z - 6x^2 \cdot w \cdot y \cdot z}{4} + (\frac{-48x^2 \cdot y \cdot w \cdot z + 64x^2 \cdot z \cdot w}{75}) + (\frac{-2x^2\cdot u \cdot z -4x^2 \cdot y \cdot w \cdot z}{3}) - \frac{t \cdot x^2 \cdot y \cdot z}{6}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & 0 & 0 & 0 \\
+0 & 1 & 4 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]46) l_{3} \leftarrow l_{3} \frac{-1}{3}\cdot l_{4}  \newline \\ \\
+L3 \rightarrow \frac{z \cdot x -2x^2 \cdot u \cdot z + 8x^2 \cdot y \cdot w \cdot z}{3} + \frac{v \cdot y^2 \cdot z - 6x \cdot x^2 \cdot y \cdot t -2x^2 \cdot u \cdot y \cdot x}{6} + (\frac{-8x^2 \cdot w \cdot y \cdot z + u \cdot y \cdot x^2 \cdot z}{5}) + (\frac{-3x^2 -4z \cdot x^2 \cdot y \cdot v - 6x^2 \cdot y \cdot t \cdot z - 12z \cdot x^2 \cdot y \cdot w}{4}) - \frac{2(64z \cdot x^2 \cdot w + 32z \cdot x^2 \cdot y \cdot w}{75} + \frac{6x^2 \cdot w \cdot y \cdot z - 8x^2 - t - z}{15} - \frac{7(v\cdot y^2 \cdot z -2x^2 \cdot v \cdot y \cdot z)}{20}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & -1 & 0 & 0 & 0 \\
+0 & 1 & 4 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]47) l_{2} \leftarrow l_{2} -1\cdot l_{4}  \newline \\ \\
+L2 \rightarrow -y\cdot \frac{3y\cdot x^2 \cdot t \cdot z}{2} + (\frac{-2y \cdot x^2 \cdot z \cdot w - 8x^2 - t - z + u \cdot y \cdot x^2 \cdot z}{5}) + (\frac{-v \cdot y^2 -3x^2}{4}) -\frac{2(64x^2 \cdot z \cdot w + 32y \cdot x^2 \cdot z \cdot w)}{75} - \frac{2(2x^2 \cdot z \cdot u -4y \cdot x^2 \cdot z \cdot w)}{3} - \frac{t\cdot x^2 \cdot y \cdot z}{6} - \frac{7(v\cdot y^2 -2x^2 \cdot v \cdot y \cdot y \cdot z)}{20}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & 0 & 0 & 0 & 0 \\
+0 & 1 & 4 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]48) l_{1} \leftarrow l_{1} +1\cdot l_{4}  \newline \\ \\
+L1 \rightarrow -x + \frac{3x^2 \cdot t \cdot y \cdot z}{2} + \frac{8x^2 - 20x^2 \cdot y \cdotz z \cdot w -3x^2 \cdot v \cdot y \cdot z + t + z}{5} + (\frac{-3x^2 + v \cdot y^2 \cdot z - v \cdot y^2 \cdot x^2 \cdot w \cdot z - 5x^2 zcdot v \cdot y \cdot z -6x^2 \cdot y \cdot t \cdot z - 12x^2 \cdot y \cdot z}{4}) + (\frac{-128x^2 \cdot z \cdot w - 80x^2 \cdot y \cdot w \cdot z}{75}) - \frac{2(2x^2 \cdot v \cdot z - 4x^2 \cdot y \cdot w \cdot z)}{3} - \frac{t \cdot x^2 \cdot y \cdot z}{6} - \frac{v \cdot x^2 \cdot z}{8} - \frac{7(v\cdot y^2 -2x^2 \cdot v \cdot y \cdot z)}{20} + \frac{u\cdot y \cdot x^2 \cdot z}{10} - \frac{t\cdot x^2 \cdot y \cdot z}{12}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & -2 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]49) l_{2} \leftarrow l_{2} -4 \cdot l_{3}  \newline \\ \\
+L2 \rightarrow - y \cdot x - \frac{3y\cdot x^2 \cdot t \cdot z}{2} + (\frac{-10y\cdot x^2 \cdot z \cdot w + 8x^2 + t + z -2\cdot u \cdot y \cdot x^2 \cdot z}{5}) + (\frac{-v\cdot y^2 + 4y \cdot x^2 \cdot z \cdot v + 6y \cdot x^2 \cdot t \cdot z + 12y \cdot x^2 \cdot z \cdot w}{4}) - \frac{4(64x^2 \cdot z \cdot w + 32y \cdot x^2 \cdot z \cdot w)}{75} + (\frac{4x \cdot z+4x^2 \cdot z \cdot u - 24y \cdot x^2 \cdot z \cdot w}{3}) + \frac{v \cdot y^2 \cdot z -7y \cdot x^2 \cdot t \cdot z - 2x^2 \cdot u \cdot y \cdot z}{6} + (\frac{-7(v \cdot y^2 - 2x^2 \cdot v \cdot y \cdot z) - 7(v\cdot y^2 \cdot z -2x^2 \cdot u \cdot y \cdot z)}{20} + \frac{6x^2 \cdot w \cdot y \cdot z -8x^2 - t - z}{15}\\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & -1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]50) l_{1} \leftarrow l_{1} +2 \cdot l_{3}  \newline \\ \\
+\left[ 
+\begin{array}{ccccccc|c}
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{array}\right]51) l_{2} \leftarrow l_{2} +1 \cdot l_{3}  \newline \\ \\
+
 \end{document}
